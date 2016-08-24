@@ -1,0 +1,10 @@
+$ cat .gitignore
+*.[oa]
+*~
+!norastreado2.a
+# comentario
+/TODO # solo ignora el archivo raiz TODO, no subdir /TODO
+build/ #ignora todos los archivos en el directorio build/
+doc/*.txt # ignora doc/notes.txt, pero no doc/server/arch.txt
+dist/
+nbproject/
