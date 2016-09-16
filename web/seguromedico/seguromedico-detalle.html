@@ -49,8 +49,8 @@
         <label for="dental">Dental:</label>
         <input id="dental" name="dental" type="checkbox" ng-model="seguro.coberturas.dental"/>
         <br>
-        <label ng-show="seguro.sexo==='M'" for="fecundacionInVitro">Fecundacion In Vitro:</label>
-        <input ng-show="seguro.sexo==='M'" id="fecundacionInVitro" name="fecundacionInVitro" type="checkbox" ng-model="seguro.coberturas.fecundacionInVitro"/>
+        <label ng-show="seguro.sexo === 'M'" for="fecundacionInVitro">Fecundacion In Vitro:</label>
+        <input ng-show="seguro.sexo === 'M'" id="fecundacionInVitro" name="fecundacionInVitro" type="checkbox" ng-model="seguro.coberturas.fecundacionInVitro"/>
         <br>
     </fieldset>
     <fieldset>
@@ -68,7 +68,7 @@
         <input id="alergia" name="alergia" type="checkbox" ng-model="seguro.enfermedades.alergia"/>
         <br>
         <label for="nombreAlergia">Nombre de la alergia:</label>
-        <input ng-disabled="seguro.enfermedades.alergia===false" id="nombreAlergia" name="nombreAlergia" type="text" ng-model="seguro.enfermedades.nombreAlergia"/>
+        <input ng-disabled="seguro.enfermedades.alergia === false" id="nombreAlergia" name="nombreAlergia" type="text" ng-model="seguro.enfermedades.nombreAlergia"/>
         <br>
     </fieldset>
     <button ng-click="guardar()" ng-disabled="form.$invalid" class="btn btn-success">Guardar</button>
@@ -80,7 +80,7 @@
     <div>Se han producido los siguientes errores</div>
     <ul>
         <li ng-repeat="bussinessMessage in bussinessMessages">
-            <strong ng-hide="businessMessage.fieldName == null">{{bussinessMessage.fieldName}}:</strong>
+            <strong ng-hide="bussinessMessage.fieldName == null">{{bussinessMessage.fieldName}}:</strong>
             {{bussinessMessage.message}}.
         </li>
     </ul>

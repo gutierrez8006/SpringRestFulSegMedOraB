@@ -10,6 +10,7 @@
   
     <bean class="seguromedico.presentacion.json.impl.JsonTransformerImplJackson" />
     <bean class="seguromedico.persistencia.dao.impl.SeguromedicoDAOImplHibernate"/>
+    <bean class="seguromedico.persistencia.dao.impl.CustomerDAOImplHibernate"/>
     
     <bean class="com.acme.pe.persistencia.hibernate.HibernateUtil" factory-method="getSessionFactory"/>
 </beans>

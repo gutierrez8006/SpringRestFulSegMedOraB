@@ -11,6 +11,7 @@
         <property name="hibernate.show_sql">true</property>
         
         <mapping class="seguromedico.dominio.SeguroMedico"/>
-        
+        <mapping class="seguromedico.dominio.Customer"/>
+        <mapping class="seguromedico.dominio.CustomerDetail"/>
     </session-factory>
 </hibernate-configuration>
